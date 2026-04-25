@@ -1,0 +1,40 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.7",
+	"Category": "Samples",
+	"Description": "Dawn of Ages: Das Erbe der Sonnenreiter - Survival Multiplayer Game",
+	"Modules": [
+		{
+			"Name": "DawnOfAges",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"CoreUObject",
+				"OnlineSubsystem",
+				"OnlineSubsystemUtils",
+				"sockets",
+				"Networking"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "TcpSocketPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "UDPWrapper",
+			"Enabled": true
+		}
+	],
+	"LocalizationTargets": [],
+	"TargetPlatforms": [
+		"Windows",
+		"WindowsEditor"
+	]
+}
